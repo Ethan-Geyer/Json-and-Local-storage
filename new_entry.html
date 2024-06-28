@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Entry</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+    </header>
+    <main>
+        <h1>New Entry</h1>
+        <form id="newEntryForm">
+            <label for="entryDate">Date of Donation/Work:</label>
+            <input type="date" id="entryDate" required>
+            
+            <label for="ministeredTo">Who You Ministered To:</label>
+            <input type="text" id="ministeredTo" required>
+            
+            <label for="itemsDonated">Items Donated:</label>
+            <input type="text" id="itemsDonated">
+            
+            <label for="workHours">Number of Hours for Work:</label>
+            <input type="number" id="workHours" required>
+            
+            <button type="button" onclick="saveNewEntry()">Save</button>
+        </form>
+        <p id="entryMessage"></p>
+    </main>
+</body>
+</html>
